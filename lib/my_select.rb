@@ -1,15 +1,18 @@
-=begin
+
 def my_select(collection)
  new_array = []
  i = 0
  while i < collection.length
-   new_array.push yield (collection[i])
-   i += 1
+   if (yield(collection[i]
+     new_array.push
+   end #yield (collection[i])
+     i += 1
  end
  new_array
 end
-=end
 
+
+=begin
 def my_select(array)
   i =0
   select = []
@@ -22,3 +25,4 @@ def my_select(array)
   end
   select
 end
+=end
